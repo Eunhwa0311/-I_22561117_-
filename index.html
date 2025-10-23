@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스물다섯 스물하나</title> <style>
+        body {
+            font-family: '맑은고딕', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6d5bb;
+        }
+
+        .gnb {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #9c8461; 
+            padding: 20px 0;
+            border-bottom: 1px solid #9c8461;
+        }
+
+        .gnb a {
+            display: inline-block;
+            background-color: #baa88d; 
+            color: #000;
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .gnb a:hover {
+            background-color: #a29176; 
+        }
+
+        .container {
+            max-width: 1500px; 
+            margin: 0 auto; 
+        }
+
+        .hero-banner {
+            width: 100%;
+            height: 450px; 
+            border-radius: 8px;
+            overflow: hidden; 
+            background-color: #baa88d; 
+        }
+
+        .hero-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        .intro-text {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .intro-text h1 {
+            font-size: 2.5rem;
+            color: #4f4231; 
+            margin-bottom: 10px;
+        }
+
+        .intro-text p {
+            font-size: 1.2rem;
+            color: #715f49; 
+            margin-top: 0;
+        }
+        
+        main h2 {
+            font-size: 1.8rem;
+            color: #4f4231; 
+            margin-bottom: 25px;
+            border-bottom: 2px solid #baa88d; 
+            padding-bottom: 30px;
+            text-align: center;
+        }
+
+        .broadcast-info {
+            margin-bottom: 50px;
+        }
+
+        .info-flex-container {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start; 
+            flex-wrap: wrap; 
+            padding: 0 30px;
+        }
+        
+        .info-box {
+            flex: 1;
+            min-width: 300px; 
+            height: 495px;  
+            border-radius: 8px;
+            background-color: #f5f0e8;
+            overflow: hidden; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .info-box.text-box {
+            align-items: center;
+            padding: 0 30px;
+            justify-content: flex-start;
+        }
+
+        .text-content-inner {
+            width: 100%; 
+        }
+
+        .text-content-inner p {
+            font-size: 1.5rem;
+            line-height: 2.0;
+            color: #4f4231; 
+            margin: 10px 0;
+            text-align: left; 
+            padding: 100px; 
+        }
+        
+        .text-content-inner b {
+            color: #3b3123; 
+            min-width: 80px; 
+            display: inline-block;
+        }
+        
+        .text-content-inner a {
+            color: #8a6d40;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .text-content-inner a:hover {
+            text-decoration: underline;
+        }
+
+        .info-box.image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        .main-teasers {
+            margin-bottom: 30px;
+            padding: 0 30px;
+        }
+
+        .teaser-flex-container {
+            display: flex;
+            gap: 20px; 
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .teaser-item {
+            flex: 1; 
+            min-width: 280px; 
+            text-align: center; 
+        }
+
+        .teaser-box {
+            border-radius: 8px;
+            background-color: #000; 
+            margin-bottom: 10px;
+            overflow: hidden; 
+            position: relative;
+            padding-top: 56.25%; 
+            height: 0;
+        }
+
+        .teaser-box video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .teaser-item p {
+            color: #4f4231;
+            font-weight: bold;
+            font-size: 1rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="gnb">
+        <a href="index.html">home</a>
+        <a href="등장인물.html">등장인물</a>
+        <a href="인물관계도.html">인물관계도</a>
+        <a href="회차정보.html">회차 정보</a>
+        <a href="ost.html">ost</a>
+        <a href="굿즈.html">굿즈</a>
+    </nav>
+
+    <div class="container"> 
+
+        <main>
+            <section class="hero-banner">
+                <img src="index배너.png" alt="스물다섯 스물하나 메인 배너">
+            </section>
+
+            <br><br>
+            <section class="intro-text">
+                <h1>스물다섯 스물하나</h1>
+                <p>1998년, 시대에게 꿈을 빼앗긴 청춘들의 방황과 성장을 그린 청량 청춘 케미스트리</p>
+            </section>
+            <br><br>
+                
+            <section class="broadcast-info">
+                <h2>방송정보</h2>
+                <div class="info-flex-container">
+                    
+                    <div class="info-box text-box">
+                        <div class="text-content-inner">
+                        <p>
+                            <b>채널</b> tvN<br>
+                            <b>편성</b> 2022.02.12~2022.04.03. 16부작<br>
+                            <b>시청률</b> 11.5%(최고시청률)<br>
+                            <b>공식</b> <a href="https://tvn.cjenm.com/ko/twentyfivetwentyone">공식홈페이지</a>
+                        </p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-box image-box">
+                        <img src="index포스터.png" alt="스물다섯 스물하나 공식 포스터">
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="main-teasers">
+                <h2>메인 티저</h2>
+                <div class="teaser-flex-container">
+                    
+                    <div class="teaser-item">
+                        <div class="teaser-box">
+                             <video width="100%" height="100%" controls>
+                                 <source src="1차티저.mp4" type="video/mp4">
+                             </video>
+                        </div>
+                        <p>1차 티저</p>
+                    </div>
+
+                    <div class="teaser-item">
+                        <div class="teaser-box">
+                             <video width="100%" height="100%" controls>
+                                 <source src="2차티저.mp4" type="video/mp4">
+                             </video>
+                        </div>
+                        <p>2차 티저</p>
+                    </div>
+
+                    <div class="teaser-item">
+                        <div class="teaser-box">
+                             <video width="100%" height="100%" controls>
+                                 <source src="3차티저.mp4" type="video/mp4">
+                             </video>
+                        </div>
+                        <p>3차 티저</p>
+                    </div>
+                    
+                </div>
+            </section>
+        </main> 
+    </div> 
+</body>
+</html>
