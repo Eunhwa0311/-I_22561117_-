@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인물관계도</title>
+
+    <style>
+    body {
+        font-family: '맑은고딕', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e6d5bb;
+    }
+
+    .gnb {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background-color: #9c8461;
+        padding: 20px 0;
+        border-bottom: 1px solid #9c8461;
+    }
+
+    .gnb a {
+        display: inline-block;
+        background-color: #baa88d;
+        color: #000;
+        text-decoration: none;
+        padding: 10px 30px;
+        border-radius: 4px;
+        font-weight: 500;
+        transition: 0.2s;
+    }
+
+    .gnb a:hover {
+        background-color: #a29176;
+    }
+
+    .container {
+        width: 50%;
+        max-width: 1400px; 
+        margin: 20px auto; 
+        background-color: #ffffff; 
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .relationship-map-image-real {
+        width: 100%; 
+        height: auto;
+        display: block;
+    }
+    
+    .content-padding {
+        padding: 25px;
+        text-align: left; 
+    }
+    
+    .poll-form {
+        margin-top: 0; 
+        padding: 20px;
+        border: 1px solid #eee;
+        border-radius: 8px;
+    }
+
+    .poll-form h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #333;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .poll-form table {
+        width: 100%;
+        border-collapse: collapse; 
+    }
+    
+    .poll-form td {
+        padding: 10px 5px; 
+        vertical-align: top; 
+        border: none; 
+    }
+
+    .poll-form td:first-child {
+        font-weight: bold;
+        width: 120px; 
+        flex-shrink: 0;
+        padding-top: 12px; 
+    }
+   
+    .poll-form td span {
+        display: inline-block;
+        margin-right: 15px;  
+        margin-bottom: 10px; 
+        white-space: nowrap;
+    }
+    
+    .poll-form td span input[type="checkbox"] {
+        margin: 0;
+        vertical-align: middle; 
+    }
+    
+    .poll-form td span label {
+        font-weight: normal;
+        vertical-align: middle;
+        margin-left: 4px; 
+    }
+
+    .poll-form input[type="text"] {
+        width: 150px;
+        padding: 5px 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .poll-form select {
+        padding: 5px 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .poll-form .email-spacer {
+        margin: 0 5px;
+        padding-top: 5px;
+    }
+
+    .poll-form td[colspan="2"] {
+        text-align: center; 
+        padding-top: 20px;
+    }
+
+    .poll-form button {
+        background-color: #e0e0e0;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+        font-size: 1rem;
+    }
+
+    .poll-form button:hover {
+        background-color: #ccc;
+    }
+    </style>
+</head>
+<body>
+    <nav class="gnb">
+        <a href="index.html">home</a>
+        <a href="등장인물.html">등장인물</a>
+        <a href="인물관계도.html">인물관계도</a>
+        <a href="회차정보.html">회차 정보</a>
+        <a href="ost.html">ost</a>
+        <a href="굿즈.html">굿즈</a>
+    </nav>
+
+    <div class="container">
+        
+        <img src="인물관계도.jpg" alt="인물관계도" class="relationship-map-image-real">
+        
+        <div class="content-padding">
+            
+            <form class="poll-form">
+                <h4>최애 인물 조합 투표 (추첨을 통해 스물다섯 스물하나 배우들의 싸인 포스터를 보내드립니다.)</h4>
+                
+                <table>
+                    <tr>
+                        <td><label for="poll">최애 인물 조합:</label></td>
+                        <td>
+                            <span>
+                                <input type="checkbox" id="cb1" name="couple" value="hee-jin">
+                                <label for="cb1">희도X이진</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="cb2" name="couple" value="hee-rim">
+                                <label for="cb2">희도X유림</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="cb3" name="couple" value="hee-wan">
+                                <label for="cb3">희도X승완</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="cb4" name="couple" value="hee-woong">
+                                <label for="cb4">희도X지웅</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="cb5" name="couple" value="rim-woong">
+                                <label for="cb5">유림X지웅</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="cb6" name="couple" value="jin-rim">
+                                <label for="cb6">이진X유림</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="cb7" name="couple" value="jin-woong">
+                                <label for="cb7">이진X지웅</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="cb8" name="couple" value="jin-wan">
+                                <label for="cb8">이진X승완</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="cb9" name="couple" value="wan-woong">
+                                <label for="cb9">승완X지웅</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="cb10" name="couple" value="wan-rim">
+                                <label for="cb10">승완X유림</label>
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email-id">이메일:</label></td>
+                        <td>
+                            <input type="text" id="email-id">
+                            <span class="email-spacer">@</span>
+                            <select id="email-domain">
+                                <option value="default">선택</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="hanmail.net">hanmail.net</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="self">직접입력</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit">제출</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div> 
+
+    </div> </body>
+</html>

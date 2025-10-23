@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회차 정보</title>
+
+    <style>
+    body {
+        font-family: '맑은고딕', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e6d5bb; 
+    }
+
+    .gnb {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background-color: #9c8461;
+        padding: 20px 0;
+        border-bottom: 1px solid #9c8461;
+    }
+
+    .gnb a {
+        display: inline-block;
+        background-color: #baa88d;
+        color: #000;
+        text-decoration: none;
+        padding: 10px 30px;
+        border-radius: 4px;
+        font-weight: 500;
+        transition: 0.2s;
+    }
+
+    .gnb a:hover {
+        background-color: #a29176;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1400px; 
+        margin: 20px auto; 
+        background-color: #ffffff; 
+        border-radius: 10px;
+        overflow: hidden; 
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        padding: 25px; 
+    }
+
+    .container h2 {
+        text-align: center;
+        font-size: 1.8rem;
+        color: #333;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+ 
+    .episode-grid {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 20px; 
+    }
+
+    .episode-card {
+        flex-basis: 300px;
+        height: 250px;
+        border-radius: 8px;
+        text-decoration: none; 
+        position: relative; 
+        overflow: hidden; 
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card-bg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        transition: transform 0.3s ease; 
+    }
+
+    .card-overlay-tint {
+        position: absolute; 
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7); 
+        opacity: 0; 
+        transition: opacity 0.3s ease; 
+    }
+
+    .card-content {
+        position: absolute; 
+        bottom: 0; 
+        left: 0; right: 0;
+        
+        height: 100%; 
+        box-sizing: border-box; 
+        padding: 20px;
+        color: white;
+
+        overflow-y: auto; 
+        
+        transform: translateY(100%);
+        transition: transform 0.3s ease-out; 
+    }
+    
+    .card-content h3 {
+        margin: 0 0 10px 0;
+        font-size: 1.3rem;
+    }
+    .card-content p {
+        margin: 0;
+        font-size: 0.9rem; 
+        line-height: 1.5; 
+    }
+    .card-content .synopsis {
+        margin-bottom: 10px;
+    }
+    .card-content .broadcast-info {
+        font-size: 0.85rem;
+        font-weight: bold;
+        color: #ddd;
+    }
+
+    .episode-card:hover .card-bg {
+        transform: scale(1.05);
+    }
+    .episode-card:hover .card-overlay-tint {
+        opacity: 1;
+    }
+    .episode-card:hover .card-content {
+        transform: translateY(0); 
+    }
+    </style>
+</head>
+<body>
+    <nav class="gnb">
+        <a href="index.html">home</a>
+        <a href="등장인물.html">등장인물</a>
+        <a href="인물관계도.html">인물관계도</a>
+        <a href="회차정보.html">회차 정보</a>
+        <a href="ost.html">ost</a>
+        <a href="굿즈.html">굿즈</a>
+    </nav>
+
+    <div class="container">
+        
+        <h2>회차소개</h2>
+        
+        <div class="episode-grid">
+
+            <a class="episode-card">
+                <img src="회차정보_1.jpg" class="card-bg">
+                <div class="card-overlay-tint"></div>
+                <div class="card-content">
+                    <h3>1화</h3>
+                    <p class="synopsis">희도는 IMF로 인해 펜싱부를 없앤다는 청천벽력 같은 소식을 듣게 된다. 펜싱을 포기할 수 없었던 희도는 태양고 전학을 위해 황당한 작전을 펼치는데... 그 여파로 불미스러운 사건에 휘말린 희도. 그곳에서 우연히 이진과 마주친다.</p>
+                    <p class="broadcast-info">2월 12일 [토] 밤 9:10 tvN 첫 방송</p>
+                </div>
+            </a>
+            
+            <a class="episode-card">
+                <img src="회차정보_2.jpg" class="card-bg">
+                <div class="card-overlay-tint"></div>
+                <div class="card-content">
+                    <h3>2화</h3>
+                    <p class="synopsis">태양고 전학 첫날. 희도는 자신의 우상, 유림을 만날 수 있다는 설렘에 들뜬다. 하지만 체육관에 달려간 희도에게 유림의 싸늘한 눈빛만이 돌아오고. 한편, 이진에게 뜻밖의 손님이 찾아오고 희도는 충격적인 광경을 목격하는데...</p>
+                    <p class="broadcast-info">[토일] 밤 9:10 tvN 방송</p>
+                </div>
+            </a>
+            
+            <a class="episode-card">
+                <img src="회차정보_3.jpg" class="card-bg">
+                <div class="card-overlay-tint"></div>
+                <div class="card-content">
+                    <h3>3화</h3>
+                    <p class="synopsis">국가대표 평가전이 열리고 희도는 뜻밖의 기회를 얻게 된다. 일분일초가 아까운 상황 속에 펜싱부 선배는 야간훈련을 못하게 막는다. 위로가 필요한 희도는 이진을 찾아갔지만 오히려 냉정한 말을 듣고 만다.</p>
+                    <p class="broadcast-info">[토일] 밤 9:10 tvN</p>
+                </div>
+            </a>
+            
+            <a class="episode-card">
+                <img src="회차정보_4.jpg" class="card-bg">
+                <div class="card-overlay-tint"></div>
+                <div class="card-content">
+                    <h3>4화</h3>
+                    <p class="synopsis">찬미의 특훈을 위해 희도는 지웅과 모종의 거래를 한다. 이 일로 희도는 난감한 상황에 처하고. 한편, 본격적으로 취업 전선에 뛰어든 이진은 치욕스러운 상황과 마주한다. 국가대표 평가전을 앞두고 불안한 희도 앞에 불현듯 이진이 나타나는데...</p>
+                    <p class="broadcast-info">[토일] 밤 9:10 tvN</p>
+                </div>
+            </a>
+
+            <a class="episode-card">
+                <img src="회차정보_5.jpg" class="card-bg">
+                <div class="card-overlay-tint"></div>
+                <div class="card-content">
+                    <h3>5화</h3>
+                    <p class="synopsis">국가대표가 되어 금의환향한 희도. 이진에게 제일 먼저 달려갔지만 이진이 사라졌다. 희도는 유림, 지웅, 승완과 함께 이진을 찾으려 고군분투하지만 찾을 수 없고.. 이진의 방황은 깊어져 가는데 그런 이진 앞에 희도가 나타난다.</p>
+                    <p class="broadcast-info">[토일] 밤 9:10 tvN</p>
+                </div>
+            </a>
+
+            <a class="episode-card">
+                <img src="회차정보_6.jpg" class="card-bg">
+                <div class="card-overlay-tint"></div>
+                <div class="card-content">
+                    <h3>6화</h3>
+                    <p class="synopsis">뜻밖의 장소에서 재회한 희도와 이진. 변해버린 서로의 모습이 조금 낯설다. 한편, 유림은 시합에 대한 압박감을 느끼고 결국 희도를 향해 참았던 불만이 터진다. 아시안게임 결승전을 앞두고 희도는 예상치 못한 사건으로 실격 위기에 처하는데...!</p>
+                    <p class="broadcast-info">[토일] 밤 9:10 tvN</p>
+                </div>
+            </a>
+
+            <a class="episode-card">
+                <img src="회차정보_7.jpg" class="card-bg">
+                <div class="card-overlay-tint"></div>
+                <div class="card-content">
+                    <h3>7화</h3>
+                    <p class="synopsis">무사히 결승전을 마친 희도와 유림. 그런데 금메달의 주인이 바뀌었다...? 기자회견장에서 두 사람은 억울함을 토로하지만 상황은 일파만파 커져가고. 이진은 편파적인 보도를 수습하기 위해 심판을 찾아가는데..</p>
+                    <p class="broadcast-info">[토일] 밤 9:10 tvN</p>
+                </div>
+            </a>
+
+            <a class="episode-card">
+                <img src="회차정보_8.jpg" class="card-bg">
+                <div class="card-overlay-tint"></div>
+                <div class="card-content">
+                    <h3>8화</h3>
+                    <p class="synopsis">이진의 이삿날. 태양고 4인방은 각자 불순한 의도를 숨기고 자취방에 총출동한다. 희도는 이진의 전여친들의 등장으로 알 수 없는 감정이 끓어오르는데... 징계를 받고 돌아가던 희도. 유림의 극단적인 모습을 보고 충격에 휩싸인다.</p>
+                    <p class="broadcast-info">[토일] 밤 9:10 tvN</p>
+                </div>
+            </a>
+
+            <a class="episode-card">
+                <img src="회차정보_9.jpg" class="card-bg">
+                <div class="card-overlay-tint"></div>
+                <div class="card-content">
+                    <h3>9화</h3>
+                    <p class="synopsis">“나.. 널 가져야겠어.” 말도 안 되는 고백 후 희도는 이진을 피하기 시작한다. 진실을 알게 된 유림. 희도를 대하는 태도가 묘하게 달라지는데... 불가피한 상황으로 맞닥뜨린 희도와 이진. 두 사람의 관계가 새롭게 정의된다.</p>
+                    <p class="broadcast-info">[토일] 밤 9:10 tvN</p>
+                </div>
+            </a>
+
+            <a class="episode-card">
+                <img src="회차정보_10.jpg" class="card-bg">
+                <div class="card-overlay-tint"></div>
+                <div class="card-content">
+                    <h3>10화</h3>
+                    <p class="synopsis">희도와 유림의 다큐가 순조롭게 진행되는 와중에 이진은 두 사람을 위해 수학여행을 계획한다. 바닷가에서 다섯 청춘들의 추억은 무르익고.. 한편, 늦은 밤 아지트로 향하는 유림, 지웅, 승완. 어두운 교실에서 수상한 움직임을 보게 되는데...!</p>
+                    <p class="broadcast-info">[토일] 밤 9:10 tvN</p>
+                </div>
+            </a>
+
+            <a class="episode-card">
+                <img src="회차정보_11.jpg" class="card-bg">
+                <div class="card-overlay-tint"></div>
+                <div class="card-content">
+                    <h3>11화</h3>
+                    <p class="synopsis">이진은 드디어 정기자가 되고 희도를 만나 축하하는 자리를 가진다. 희도는 재경이 약속을 어기자 과거의 상처가 떠오르는데... 한편, 지웅은 유림을 위해 특별한 공연을 준비하지만 뜻밖의 난관에 봉착한다.</p>
+                    <p class="broadcast-info">[토일] 밤 9:10 tvN</p>
+                </div>
+            </a>
+
+            <a class="episode-card">
+                <img src="회차정보_12.jpg" class="card-bg">
+                <div class="card-overlay-tint"></div>
+                <div class="card-content">
+                    <h3>12화</h3>
+                    <p class="synopsis">희도와 유림은 예지를 돕기 위해 훈련을 거부한다. 승완은 교내 체벌로 교사를 신고하지만 사건은 예상치 못한 방향으로 흘러가고. 새천년을 맞이하기 위해 이진의 자취방에 모인 사인방. 지구 멸망 얘기로 한창인데...</p>
+                    <p class="broadcast-info">[토일] 밤 9:10 tvN</p>
+                </div>
+            </a>
+
+            <a class="episode-card">
+                <img src="회차정보_13.jpg" class="card-bg">
+                <div class="card-overlay-tint"></div>
+                <div class="card-content">
+                    <h3>13화</h3>
+                    <p class="synopsis">이진에게 진심을 전한 희도. 하지만 이진은 자꾸만 희도를 밀어낸다. 찬미에게 뜻밖의 사연을 듣게 된 이진. 희도와의 관계를 고민하는데... 한편, 희도와 유림은 저조한 컨디션 속에 마지막 단체전을 뛰게 된다.</p>
+                    <p class="broadcast-info">[토일] 밤 9:10 tvN</p>
+                </div>
+            </a>
+
+            <a class="episode-card">
+                <img src="회차정보_14.jpg" class="card-bg">
+                <div class="card-overlay-tint"></div>
+                <div class="card-content">
+                    <h3>14화</h3>
+                    <p class="synopsis">성인이 되어 자유를 만끽하는 태양고 4인방. 하지만 이들에게 갑작스러운 이별이 찾아온다. 유림 아버지의 교통사고로 유림은 선택의 기로에 놓이고, 이진은 이 사건을 보도해야 하는 상황에 놓인다. 이진의 고민은 깊어지고..</p>
+                    <p class="broadcast-info">[토일] 밤 9:10 tvN</p>
+                </div>
+            </a>
+
+            <a class="episode-card">
+                <img src="회차정보_15.jpg" class="card-bg">
+                <div class="card-overlay-tint"></div>
+                <div class="card-content">
+                    <h3>15화</h3>
+                    <p class="synopsis">바쁜 와중에 사랑을 이어나가는 이진과 희도. 함께 스물다섯 스물하나를 맞이한다. 그런데 두 사람에게 예상치 못한 큰 고비가 찾아오는데...! 한편, 희도와 유림은 오해를 안은 채 다시 한 번 파이널 피스트에서 만나게 된다.</p>
+                    <p class="broadcast-info">[토일] 밤 9:10 tvN</p>
+                </div>
+            </a>
+
+            <a class="episode-card">
+                <img src="회차정보_16.jpg" class="card-bg">
+                <div class="card-overlay-tint"></div>
+                <div class="card-content">
+                    <h3>16화</h3>
+                    <p class="synopsis">뉴욕에 있는 이진에게 더 이상 희도의 마음이 닿지 않는다. 결국 서로에게 상처 내는 말들만 쏟아내고 돌아서는데... 후회만 남은 이별. 두 사람은 마지막으로 진심을 전하고자 서로를 향해 달려간다.</p>
+                    <p class="broadcast-info">[토일] 밤 9:10 tvN</p>
+                </div>
+            </a>
+
+        </div> </div> </body>
+</html>

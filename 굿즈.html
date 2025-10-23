@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>굿즈</title> <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: '맑은고딕', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #e6d5bb;
+        }
+
+        .gnb {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #9c8461; 
+            padding: 20px 0;
+            border-bottom: 1px solid #9c8461;
+        }
+
+        .gnb a {
+            display: inline-block;
+            background-color: #baa88d;
+            color: #000;
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .gnb a:hover {
+            background-color: #a29176; 
+        }
+       
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            padding: 0 30px; 
+            
+        }
+
+        .card {
+            width: 100%; 
+            max-width: 700px; 
+            height: 600px; 
+            background-color: #ffffff;
+            position: relative; 
+            overflow: hidden; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; 
+            transition: transform 0.3s ease; 
+        }
+
+        .card-overlay {
+            position: absolute; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+            background-color: rgba(0, 0, 0, 0.6); 
+            color: white; 
+
+            display: flex;
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            padding: 20px;
+            text-align: center;
+
+            opacity: 0; 
+            transition: opacity 0.3s ease; 
+        }
+
+        .card-overlay h3 {
+            margin-bottom: 10px; 
+        }
+
+        .card:hover .card-overlay {
+            opacity: 1; 
+        }
+
+        .card:hover img {
+            transform: scale(1.1); 
+        }
+
+        ul {
+            display: inline-block;
+            text-align: left;      
+            padding-left: 0;     
+            list-style: none;  
+        }
+
+        li {
+            margin-bottom: 5px;  
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="gnb">
+        <a href="index.html">home</a>
+        <a href="등장인물.html">등장인물</a>
+        <a href="인물관계도.html">인물관계도</a>
+        <a href="회차정보.html">회차 정보</a>
+        <a href="ost.html">ost</a>
+        <a href="#">굿즈</a>
+     </nav>
+
+    <main class="card-container">
+        
+        <div class="card">
+            <img src="굿즈1.jpg" alt="스물다섯 스물하나 OST 앨범">
+            
+            <div class="card-overlay">
+                <h3>스물다섯 스물하나 ost 드라마노래 굿즈 앨범</h3>
+                <p>
+                    [ 앨범 사양 ]
+                </p>
+                 <ul>
+                    <li>
+                        미공개 사진, 명대사, 가사지를 포함한 포토북
+                    </li>
+                    <li>
+                       태양고 5인 배우들의 바다여행 사진 5종
+                    </li>
+                    <li>
+                       주인공 사인 폴라로이드 사진 6종
+                    </li>
+                    <li>
+                       다꾸(다이어리 꾸미기) 스티커 1종(희도&유림 스티커 사진 포함)
+                    </li>
+                    <li>
+                       방대한 분량의 2CD
+                    </li>
+                    <li>
+                       초도한정 포스터 1종
+                    </li>
+                 </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="굿즈2.jpg" alt="스물다섯 스물하나 드라마 포스터">
+
+            <div class="card-overlay">
+                <h3>스물다섯 스물하나 드라마 포스터</h3>
+                <p>사인인쇄 포스터only</p>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
